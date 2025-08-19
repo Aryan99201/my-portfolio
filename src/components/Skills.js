@@ -3,33 +3,43 @@ import React from 'react';
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend",
+      title: "Programming Languages",
       skills: [
-        { name: "HTML5", level: 95 },
-        { name: "CSS3", level: 90 },
-        { name: "JavaScript", level: 88 },
-        { name: "React.js", level: 85 },
-        { name: "TypeScript", level: 80 }
+        { name: "Python", level: 85 },
+        { name: "C", level: 80 },
+        { name: "C++", level: 84 },
+        { name: "JavaScript", level: 70 },
+        { name: "SQL", level: 75 }
       ]
     },
     {
-      title: "Backend",
+      title: "Web Development",
       skills: [
-        { name: "Node.js", level: 85 },
-        { name: "Python", level: 82 },
-        { name: "Express.js", level: 80 },
-        { name: "MongoDB", level: 78 },
-        { name: "PostgreSQL", level: 75 }
+        { name: "HTML5", level: 90 },
+        { name: "CSS3", level: 85 },
+        { name: "JavaScript", level: 75 },
+        { name: "Responsive Design", level: 72 },
+        { name: "Web Security", level: 85 }
       ]
     },
     {
-      title: "Tools & Others",
+      title: "Cybersecurity",
       skills: [
-        { name: "Git", level: 90 },
-        { name: "AWS", level: 70 },
-        { name: "Docker", level: 65 },
-        { name: "Figma", level: 85 },
-        { name: "REST APIs", level: 88 }
+        { name: "Ethical Hacking", level: 88 },
+        { name: "Digital Forensics", level: 82 },
+        { name: "OSINT", level: 85 },
+        { name: "Cryptography", level: 80 },
+        { name: "Network Security", level: 83 }
+      ]
+    },
+    {
+      title: "Computer Science",
+      skills: [
+        { name: "Data Structures & Algorithms", level: 90 },
+        { name: "Operating Systems", level: 85 },
+        { name: "Computer Networks", level: 80 },
+        { name: "Database Management", level: 82 },
+        { name: "Software Engineering", level: 75 }
       ]
     }
   ];
@@ -39,7 +49,7 @@ const Skills = () => {
       <div className="container">
         <div className="section-header">
           <h2>Technical Skills</h2>
-          <p>Here are the technologies and tools I work with</p>
+          <p>Here are the technologies and cybersecurity skills I work with</p>
         </div>
         
         <div className="skills-grid">
@@ -67,9 +77,9 @@ const Skills = () => {
         </div>
 
         <div className="additional-skills">
-          <h3>Additional Technologies</h3>
+          <h3>Additional Technologies & Tools</h3>
           <div className="tech-tags">
-            {["Redux", "Sass", "Webpack", "Jest", "GraphQL", "Firebase", "Tailwind CSS", "Next.js"].map((tech, index) => (
+            {["Penetration Testing", "Vulnerability Assessment", "Linux", "Windows Security", "Network Analysis", "Incident Response", "Malware Analysis", "Security Auditing"].map((tech, index) => (
               <span key={index} className="tech-tag">{tech}</span>
             ))}
           </div>

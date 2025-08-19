@@ -155,7 +155,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  placeholder="your.email@example.com"
+                  placeholder="your.email@mail.com"
                 />
               </div>
 
@@ -199,7 +199,7 @@ const Contact = () => {
 
       <footer className="footer">
         <div className="container">
-          <p>&copy; 2024 John Smith. All rights reserved. Built with React.</p>
+          <p>&copy; 2024 Aryan. All rights reserved. Built with React.</p>
         </div>
       </footer>
     </section>

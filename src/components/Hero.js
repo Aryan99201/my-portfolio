@@ -9,12 +9,13 @@ const Hero = () => {
             <h1 className="hero-title">
               Hi, I'm <span className="highlight">Aryan</span>
             </h1>
-            <h2 className="hero-subtitle">Web Developer</h2>
+            <h2 className="hero-subtitle">Cybersecurity Enthusiast & Developer</h2>
             <p className="hero-description">
-              I'm a passionate web developer creating modern, responsive
-              websites and applications. I love turning ideas 
-              into beautiful, functional digital experiences using the latest 
-              technologies and best practices.
+              I'm a passionate cybersecurity enthusiast and developer with expertise in 
+              ethical hacking, digital forensics, and secure software development. I love 
+              exploring security vulnerabilities, building safe simulation tools, and 
+              contributing to a more secure digital world through responsible research 
+              and development.
             </p>
             <div className="hero-buttons">
               <button 
@@ -34,10 +35,10 @@ const Hero = () => {
           
           <div className="hero-image">
             <div className="image-container">
-              {/* My actual photo */}
+              {/* Your local photo */}
               <img 
                 src="/my-photo.jpg" 
-                alt="Aryan - Web Developer" 
+                alt="Aryan - Cybersecurity Enthusiast" 
                 className="profile-photo"
               />
               <div className="image-bg"></div>

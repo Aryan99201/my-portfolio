@@ -3,40 +3,13 @@ import React from 'react';
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Dashboard",
-      description: "A comprehensive admin dashboard for managing e-commerce operations with real-time analytics, inventory management, and order tracking. Built with React and Node.js.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      technologies: ["React", "Node.js", "MongoDB", "Chart.js", "Express"],
-      githubLink: "https://github.com/Aryan99201",
-      liveLink: "https://blank.page/",
+      title: "Ransomware Simulator",
+      description: "A safe ransomware simulation built to demonstrate how file encryption works in a controlled environment. Implemented AES-based cryptography to encrypt and decrypt files, while ensuring that all security testing was performed without real-world harm.",
+      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop",
+      technologies: ["Cryptography", "Encryption", "AES", "Cybersecurity", "Simulation"],
+      githubLink: "https://github.com/Aran99201",
+      liveLink: null,
       featured: true
-    },
-    {
-      title: "Weather App",
-      description: "A responsive weather application that provides current weather conditions and 7-day forecasts for any location worldwide. Features location-based weather detection.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
-      technologies: ["JavaScript", "CSS3", "Weather API", "Geolocation API"],
-      githubLink: "https://github.com/Aryan99201",
-      liveLink: "https://blank.page/",
-      featured: false
-    },
-    {
-      title: "Task Management System",
-      description: "A collaborative project management tool with drag-and-drop functionality, real-time updates, and team collaboration features. Perfect for agile development teams.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
-      technologies: ["React", "Firebase", "Material-UI", "Context API"],
-      githubLink: "https://github.com/Aryan99201",
-      liveLink: "https://blank.page/",
-      featured: true
-    },
-    {
-      title: "Portfolio Website",
-      description: "A modern, responsive portfolio website showcasing web development projects with smooth animations and optimized performance. The site you're currently viewing!",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop",
-      technologies: ["React", "CSS3", "Responsive Design", "Animation"],
-      githubLink: "https://github.com/Aryan99201",
-      liveLink: "https://blank.page/",
-      featured: false
     }
   ];
 
@@ -44,8 +17,8 @@ const Projects = () => {
     <section id="projects" className="projects">
       <div className="container">
         <div className="section-header">
-          <h2>Featured Projects</h2>
-          <p>Here are some of my recent projects that showcase my skills</p>
+          <h2>Featured Project</h2>
+          <p>Here is my cybersecurity project that showcases my technical skills</p>
         </div>
 
         <div className="projects-grid">
@@ -66,17 +39,19 @@ const Projects = () => {
                       </svg>
                       GitHub
                     </a>
-                    <a 
-                      href={project.liveLink} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="project-link"
-                    >
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
-                      </svg>
-                      Live Demo
-                    </a>
+                    {project.liveLink && (
+                      <a 
+                        href={project.liveLink} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="project-link"
+                      >
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg>
+                        Live Demo
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -96,7 +71,7 @@ const Projects = () => {
         </div>
 
         <div className="more-projects">
-          <p>Want to see more of my work?</p>
+          <p>Want to see more of my cybersecurity work?</p>
           <a 
             href="https://github.com/Aryan99201" 
             target="_blank" 
