@@ -7,7 +7,7 @@ const Projects = () => {
       description: "A safe ransomware simulation built to demonstrate how file encryption works in a controlled environment. Implemented AES-based cryptography to encrypt and decrypt files, while ensuring that all security testing was performed without real-world harm.",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop",
       technologies: ["Cryptography", "Encryption", "AES", "Cybersecurity", "Simulation"],
-      githubLink: "https://github.com/Aran99201",
+      githubLink: "https://github.com/Aryan99201",
       liveLink: null,
       featured: true
     }
