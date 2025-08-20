@@ -70,17 +70,16 @@ The website will automatically open in your default browser and will hot-reload 
 ### Personal Information
 
 1. **Update Hero Section (src/components/Hero.js):**
-   - Change "John Smith" to your actual name
+   - Change "Aryan" to your actual name
    - Update the professional description
    - Replace the profile photo URL with your own image
 
 2. **Update Skills (src/components/Skills.js):**
    - Modify the skills array with your actual technical skills
-   - Adjust the proficiency percentages
    - Add or remove skill categories as needed
 
 3. **Update Projects (src/components/Projects.js):**
-   - Replace sample projects with your actual projects
+   - Replace the projects with your projects
    - Update project descriptions, technologies, and links
    - Add your GitHub repository and live demo URLs
 
