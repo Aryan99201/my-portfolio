@@ -3,13 +3,11 @@ import React, { useState } from 'react';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
-    element.scrollIntoView({ behavior: 'smooth' });
+    if (element) element.scrollIntoView({ behavior: 'smooth' });
     setIsMenuOpen(false);
   };
 
@@ -17,10 +15,11 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <div className="header-content">
+
           <div className="logo">
-            <h2>Aryan</h2>
+            aryan<span className="accent-dot">.</span>dev
           </div>
-          
+
           <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
             <ul>
               <li><button onClick={() => scrollToSection('home')}>Home</button></li>
@@ -30,11 +29,25 @@ const Header = () => {
             </ul>
           </nav>
 
-          <button className="menu-toggle" onClick={toggleMenu}>
+          <div className="header-cta">
+            <div className="status-badge">
+              <span className="status-dot"></span>
+              Available for work
+            </div>
+            <button
+              className="btn-primary btn-header"
+              onClick={() => scrollToSection('contact')}
+            >
+              Hire Me
+            </button>
+          </div>
+
+          <button className="menu-toggle" onClick={toggleMenu} aria-label="Toggle menu">
             <span></span>
             <span></span>
             <span></span>
           </button>
+
         </div>
       </div>
     </header>
